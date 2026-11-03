@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    #section2 {
+        width: 100%;
+        height: 200px;
+        
+    }
+    .title{
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+    /* Room Container */
+    .room-container {
+        display: flex;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        justify-content: space-around;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    /* Room Card */
+    .room-card {
+        background-color: #f8f3ec;
+        border: 1px solid #b9b1a8;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.12);
+        width: 330px;
+        height: 330px;
+    }
+
+    /* Room Image */
+    .room-card img {
+        width: 100%;
+        height: 138px;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* Room Information */
+    .room-info {
+        padding: 10px 17px 16px;
+    }
+
+    .room-info h3 {
+        font-size: 13px;
+        color: #57351c;
+        margin-bottom: 16px;
+    }
+
+    .bed {
+        font-size: 10px;
+        color: #8b7d70;
+        margin-bottom: 18px;
+    }
+
+    .price {
+        font-size: 11px;
+        margin-bottom: 13px;
+        color: #33271e;
+    }
+
+    .price b {
+        font-size: 13px;
+        color: #57351c;
+    }
+
+    /* Button */
+    .room-info button {
+        width: 100%;
+        padding: 7px;
+        background-color: #59371e;
+        color: white;
+        border: 1px solid #3e2817;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 10px;
+    }
+
+    .room-info button:hover {
+        background-color: #79502f;
+    }
+</style>
+
+<body>
+    <section id="section2">
+        <div class="title">
+            <h1>Features</h1>
+            <p>Choose from</p>
+        </div>
+        <div class="room-container">
+
+        <!-- Room 1 -->
+        <div class="room-card">
+            <img src="room.jpg" alt="Deluxe Room">
+
+            <div class="room-info">
+                <h3>Deluxe Room</h3>
+                <p class="bed">🛏️ 1 Bed</p>
+                <p class="price"><b>80$</b> / Month</p>
+
+                <button>View Details →</button>
+            </div>
+        </div>
+
+        <!-- Room 2 -->
+        <div class="room-card">
+            <img src="room.jpg" alt="Deluxe Room">
+
+            <div class="room-info">
+                <h3>Deluxe Room</h3>
+                <p class="bed">🛏️ 1 Bed</p>
+                <p class="price"><b>80$</b> / Month</p>
+
+                <button>View Details →</button>
+            </div>
+        </div>
+
+        <!-- Room 3 -->
+        <div class="room-card">
+            <img src="room.jpg" alt="Deluxe Room">
+
+            <div class="room-info">
+                <h3>Deluxe Room</h3>
+                <p class="bed">🛏️ 1 Bed</p>
+                <p class="price"><b>80$</b> / Month</p>
+
+                <button>View Details →</button>
+            </div>
+        </div>
+
+        <!-- Room 4 -->
+        <div class="room-card">
+            <img src="room.jpg" alt="Deluxe Room">
+
+            <div class="room-info">
+                <h3>Deluxe Room</h3>
+                <p class="bed">🛏️ 1 Bed</p>
+                <p class="price"><b>80$</b> / Month</p>
+
+                <button>View Details →</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
